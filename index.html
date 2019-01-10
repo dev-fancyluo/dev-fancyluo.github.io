@@ -14,7 +14,7 @@
   
 
 
-<html class="theme-next pisces use-motion" lang="zh-CN">
+<html class="theme-next gemini use-motion" lang="zh-CN">
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -60,8 +60,6 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.7.0">
 
 
-  <link rel="mask-icon" href="/images/logo.svg?v=6.7.0" color="#222">
-
 
 
 
@@ -72,7 +70,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Pisces',
+    scheme: 'Gemini',
     version: '6.7.0',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: false,
@@ -364,12 +362,24 @@
                 
               
 
-              <time title="创建时间：2019-01-04 15:03:53 / 修改时间：15:34:29" itemprop="dateCreated datePublished" datetime="2019-01-04T15:03:53+08:00">2019-01-04</time>
+              <time title="创建时间：2019-01-04 15:03:53" itemprop="dateCreated datePublished" datetime="2019-01-04T15:03:53+08:00">2019-01-04</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-01-10 16:17:25" itemprop="dateModified" datetime="2019-01-10T16:17:25+08:00">2019-01-10</time>
               
             
           </span>
@@ -421,8 +431,12 @@
 
       
         
-          <blockquote class="blockquote-center"><p><strong>业精于勤 荒于嬉</strong><br><strong>行成于思 毁于随</strong></p>
-</blockquote>
+          <ol>
+<li>AsyncTask 为什么需要在主线程创建和执行？</li>
+<li>AsyncTask 能执行多次吗？</li>
+<li>AsyncTask 怎么切换线程的？</li>
+<li>AsyncTask 执行任务是串行还是并行的？</li>
+</ol>
           <!--noindex-->
           
             <div class="post-button text-center">
@@ -548,7 +562,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-01-04 15:24:35" itemprop="dateModified" datetime="2019-01-04T15:24:35+08:00">2019-01-04</time>
+                <time title="修改时间：2019-01-10 16:18:41" itemprop="dateModified" datetime="2019-01-10T16:18:41+08:00">2019-01-10</time>
               
             
           </span>
@@ -600,8 +614,7 @@
 
       
         
-          <blockquote class="blockquote-center"><p><strong>千里之行 始于足下</strong></p>
-</blockquote>
+          <p>Android 的消息机制主要是指 Handler 的运行机制，Handler 的运行需要底层的 Looper 和 MessageQueue 支持，MessageQueue 可以理解为消息队列，用来存储 Handler 发出的消息，而 Looper 可以理解为消息循环，由于 MessageQueue 只用来存储消息，不能处理消息，所以 Looper 就是用来处理消息的，Looper 会以无限循环的形式去消息队列中获取新消息，如果有的话就处理消息，没有就一直等待着。而 Looper 还涉及到一个概念就是 ThreadLocal，ThreadLocal 可以让数据在不同线程中实现不同的数据副本，当 Handler 创建的时候，会获取当前线程的 Looper 来构建消息循环系统，而这就是通过 ThreadLocal 来获取的。需要注意的是，线程默认是没有 Looper 的，要使用 Handler 就必须为线程创建 Looper，而我们可以在主线程中直接创建 Handler，是因为主线程在创建的时候就初始化了 Looper 并开启了消息循环。</p>
           <!--noindex-->
           
             <div class="post-button text-center">
@@ -784,7 +797,7 @@
 
 
 
-  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v6.7.0</div>
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v6.7.0</div>
 
 
 
